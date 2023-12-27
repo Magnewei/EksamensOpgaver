@@ -5,7 +5,7 @@ import java.util.Stack;
 
 public class Game {
     private final Deck deck = new Deck();
-    Stack<Card> cardDeck = deck.createDeck();
+    private final Stack<Card> cardDeck = deck.createDeck();
     public Game() {
 
     }
@@ -16,7 +16,7 @@ public class Game {
         return cardDeck.getFirst();
     }
 
-    // Compares the player's and NPC's card and returns the highest one.
+    // Compares the player's and NPCs card and returns the highest one.
     public Card highest(Card playerCard, Card npcCard) {
         Card highestCard;  // Empty card for holding winner.
 

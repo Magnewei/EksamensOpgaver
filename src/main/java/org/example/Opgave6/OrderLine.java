@@ -15,7 +15,7 @@ public class OrderLine {
 
     @Override
     public String toString() {
-        return "Bought " + amount + " of " + item.getName();
+        return "Bought " + amount + " " + item + ".";
     }
 
     public int getAmount() {

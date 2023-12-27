@@ -52,7 +52,6 @@ public class Game {
 
     // Checks if there's a winner and prints if true.
     private void win() {
-
         // Prints guesses.
         System.out.println(playerName + " guess is: "  + playerGuess + ". \n" +
                 player2Name + " guess is:  " + player2Guess + ". " +
@@ -65,6 +64,5 @@ public class Game {
         } else {
             System.out.println("Nobody guessed correctly!");
         }
-
     }
 }

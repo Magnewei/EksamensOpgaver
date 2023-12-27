@@ -8,6 +8,5 @@ public class HumanPlayer implements Player {
     public int makeAGuess(int maxValue) {
         Scanner scanner = new Scanner(System.in);
         return scanner.nextInt();
-
     }
 }

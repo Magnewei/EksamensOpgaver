@@ -5,4 +5,9 @@ public class MonthlyEmployee extends Employee {
     public MonthlyEmployee(double salary) {
         this.salary = salary;
     }
+
+    @Override
+    public double calculateSalary() {
+        return salary;
+    }
 }

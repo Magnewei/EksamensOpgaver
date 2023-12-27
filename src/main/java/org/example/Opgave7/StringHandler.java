@@ -9,7 +9,7 @@ public class StringHandler {
         String gender = student.getGender().equals("Female") ? "She" : "He";
 
         // Returns student's toString with pronoun instead of name.
-        return student.toString().replace(student.getName(), gender);
+        return student != null ? student.toString().replace(student.getName(), gender) : "No student found";
     }
 
 
@@ -30,7 +30,7 @@ public class StringHandler {
     // Generically replaces student's name with "They"
     public String anonymizeGender(Student student) {
 
-        // Returns student's toString with pronoun instead of name.
-        return student.toString().replace(student.getName(), "They");
+        // Returns student's toString with pronoun instead of name. If student is null, return "No student found".
+        return student != null ? student.toString().replace(student.getName(), "They") : "No student found";
     }
 }

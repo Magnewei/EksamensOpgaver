@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Quiz {
-    private List<QuizElement> elements = new ArrayList<>();
+    private final List<QuizElement> elements = new ArrayList<>();
     private int correctAnswers, wrongAnswers;
 
     public void addQuizElement(QuizElement quiz) {

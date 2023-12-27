@@ -7,7 +7,7 @@ public class Order {
     private final List<OrderLine> orderLines = new ArrayList<>();
 
 
-    private double getTotalPrice() {
+    public double getTotalPrice() {
         double totalPrice = 0;
         for (OrderLine order : orderLines) {
               totalPrice += order.getTotalPrice();
@@ -31,4 +31,13 @@ public class Order {
         }
         return totalOrders;
     }
+
+    public void printList() {
+        if (orderLines != null) {
+            for (OrderLine order : orderLines) {
+                System.out.println(order);
+            }
+        }
+    }
+
 }
