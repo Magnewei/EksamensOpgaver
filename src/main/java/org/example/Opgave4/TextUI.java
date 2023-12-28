@@ -7,34 +7,34 @@ public class TextUI {
     private final Scanner scanner = new Scanner(System.in);
     private final Loops loops = new Loops();
 
-    public void play() {
+
+    // Starts main loop
+    public void run() {
         System.out.println("Welcome to the application." + "\nPlease type a number corresponding to the size of the triangle.");
-
-        startGame();
-
+        inputLoop();
     }
 
-    private void startGame() {
+
+    // Parses user input and handles exceptions.
+    private void inputLoop() {
         try {
             int x = scanner.nextInt();
             if (x > 0) {
-                drawTriangle(x);
+                printTriangle(x);
             }
         } catch (InputMismatchException e){
             System.out.println("Please type an integer.");
             scanner.nextLine();
-            startGame();
-
+            inputLoop();
         }
-
     }
 
 
-    private void drawTriangle(int x) {
+    // Prints triangle according to user input.
+    private void printTriangle(int x) {
         try {
             scanner.nextLine();
             System.out.println("Please type L or R to print a left or right angled triangle.");
-
             String input = scanner.nextLine();
 
             // .toUpperCase disables case sensitivity.

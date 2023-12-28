@@ -75,8 +75,7 @@ public class Main {
         quiz.addQuizElement(new QuizElement(1, question8));
         quiz.addQuizElement(new QuizElement(1, question9));
         quiz.addQuizElement(new QuizElement(1, question10));
-
-        quiz.playGame();
+        quiz.run();
 
 
     }
