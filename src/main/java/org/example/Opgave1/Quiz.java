@@ -30,13 +30,16 @@ public class Quiz {
             play(element);
 
         }
+
         // Printed on game exit or finish.
         System.out.println("Thanks for playing. You had " + correctAnswers + " correct responses and "
                 + wrongAnswers + " wrong responses." + "\nThanks for playing.");
+        scanner.close();
     }
 
 
     public void play(QuizElement quizElement) {
+
         try {
             int input = scanner.nextInt();
 

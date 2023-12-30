@@ -5,16 +5,22 @@ public class Loops {
     private final String star = "*";
 
     // Print left side of a triangle.
-    public void drawLeftTriangle(int i) {
-        for(int n = 1; n < i ; n++) {
-            System.out.println(whiteSpace.repeat(10-n) + star.repeat(n));
+    public void drawLeftTriangle(int length) {
+        for (int n = 1; n < length; n++) {
+            System.out.println(whiteSpace.repeat(length - n) + star.repeat(n));
         }
     }
 
     // Print right side of a triangle.
-    public void drawRightTriangle(int i) {
-        for(int n = 1;  n < i ; n++) {
-            System.out.println(star.repeat(n) + whiteSpace.repeat(10-n));
+    public void drawRightTriangle(int length) {
+        for (int n = 1; n < length; n++) {
+            System.out.println(star.repeat(n) + whiteSpace.repeat(length - n));
+        }
+    }
+
+    public void drawSquare(int length) {
+        for (int n = 1; n < length; n++) {
+            System.out.println(star.repeat(length));
         }
     }
 }

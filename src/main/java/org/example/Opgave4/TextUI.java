@@ -31,7 +31,7 @@ public class TextUI {
 
 
     // Prints triangle according to user input.
-    private void printTriangle(int x) {
+    private void printTriangle(int length) {
         try {
             scanner.nextLine();
             System.out.println("Please type L or R to print a left or right angled triangle.");
@@ -40,11 +40,11 @@ public class TextUI {
             // .toUpperCase disables case sensitivity.
             switch (input.toUpperCase()) {
                 case "R":
-                    loops.drawRightTriangle(x);
+                    loops.drawRightTriangle(length);
                     break;
 
                 case "L":
-                    loops.drawLeftTriangle(x);
+                    loops.drawLeftTriangle(length);
                     break;
 
                 default:
