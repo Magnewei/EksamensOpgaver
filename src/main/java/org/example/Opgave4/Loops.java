@@ -5,22 +5,28 @@ public class Loops {
     private final String star = "*";
 
     // Print left side of a triangle.
-    public void drawLeftTriangle(int length) {
+    public String drawLeftTriangle(int length) {
+        String leftTriangle = "";
         for (int n = 1; n < length; n++) {
-            System.out.println(whiteSpace.repeat(length - n) + star.repeat(n));
+            leftTriangle += "\n"+whiteSpace.repeat(length - n) + star.repeat(n);
         }
+        return leftTriangle;
     }
 
     // Print right side of a triangle.
-    public void drawRightTriangle(int length) {
+    public String drawRightTriangle(int length) {
+        String rightTriangle = "";
         for (int n = 1; n < length; n++) {
-            System.out.println(star.repeat(n) + whiteSpace.repeat(length - n));
+            rightTriangle += "\n"+star.repeat(n) + whiteSpace.repeat(length - n);
         }
+        return rightTriangle;
     }
 
-    public void drawSquare(int length) {
-        for (int n = 1; n < length; n++) {
-            System.out.println(star.repeat(length));
+    public String drawSquare(int length) {
+        String square = "";
+        for (int n = 1; n <= length; n++) {
+            square += "\n"+star.repeat(length);
         }
+        return square;
     }
 }

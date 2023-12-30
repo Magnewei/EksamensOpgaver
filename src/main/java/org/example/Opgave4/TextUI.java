@@ -7,21 +7,38 @@ public class TextUI {
     private final Scanner scanner = new Scanner(System.in);
     private final Loops loops = new Loops();
 
-
     // Starts main loop
     public void run() {
-        System.out.println("Welcome to the application." + "\nPlease type a number corresponding to the size of the triangle.");
+        System.out.println("Welcome to the application. Please type an integer corresponding to the length of the shape.");
         inputLoop();
+        scanner.close();
+    }
+
+    public void chooseToSave(String shape) {
+        System.out.println("Do you wish to save the shape to a file?\n[Yes/No]");
+        FileIO fileIO = new FileIO();
+        String input = scanner.nextLine();
+
+        switch (input.toUpperCase()) {
+            case "YES":
+                fileIO.saveToFile(shape);
+                break;
+
+            case "NO":
+                break;
+
+            default:
+                System.out.println("Please type a valid input.");
+        }
     }
 
 
     // Parses user input and handles exceptions.
     private void inputLoop() {
         try {
-            int x = scanner.nextInt();
-            if (x > 0) {
-                printTriangle(x);
-            }
+            int input = scanner.nextInt();
+            printShape(input);
+
         } catch (InputMismatchException e){
             System.out.println("Please type an integer.");
             scanner.nextLine();
@@ -31,29 +48,32 @@ public class TextUI {
 
 
     // Prints triangle according to user input.
-    private void printTriangle(int length) {
-        try {
-            scanner.nextLine();
-            System.out.println("Please type L or R to print a left or right angled triangle.");
+    private void printShape(int length) {
+        scanner.nextLine();
+            System.out.println("Please type L or R to print the left or right side of a triangle. Alternatively write 'Square' to print a square.");
             String input = scanner.nextLine();
 
             // .toUpperCase disables case sensitivity.
             switch (input.toUpperCase()) {
                 case "R":
-                    loops.drawRightTriangle(length);
+                    System.out.println(loops.drawRightTriangle(length));
+                    chooseToSave(loops.drawRightTriangle(length));
                     break;
 
                 case "L":
-                    loops.drawLeftTriangle(length);
+                    System.out.println(loops.drawLeftTriangle(length));
+                    chooseToSave(loops.drawLeftTriangle(length));
+                    break;
+
+                case "SQUARE":
+                    System.out.println(loops.drawSquare(length));
+                    chooseToSave(loops.drawSquare(length));
                     break;
 
                 default:
-                    System.out.println("Please type a valid input.");
+                    System.out.println("Please type a valid shape.");
             }
-
-        } catch (InputMismatchException e) {
-            System.out.println("Please type a valid input.");
-        }
     }
+
 
 }
