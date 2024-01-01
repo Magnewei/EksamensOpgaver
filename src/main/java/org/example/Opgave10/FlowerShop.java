@@ -18,7 +18,7 @@ public class FlowerShop {
     }
 
     private void presentList() {
-        int number = 1;
+        int number = 1;  // Used for number of flower in list.
 
         flowers.add(new Flower("Rose", 20));
         flowers.add(new Flower("Tulip", 20));
@@ -53,7 +53,7 @@ public class FlowerShop {
                     System.out.println("Please type an input within the range of the list.");
                     buyFlowers();
                 } else {
-                    int index = Integer.parseInt(input) - 1;
+                    int index = Integer.parseInt(input) - 1;  // -1 is used to get correct flower from list.
                     Flower boughtFlower = flowers.get(index);
                     boughtFlowers.add(boughtFlower);
                     totalPrice += boughtFlower.getPrice();
