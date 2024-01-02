@@ -2,7 +2,6 @@ package org.example;
 
 import org.junit.jupiter.api.*;
 
-
 public class Test {
 
     @BeforeEach
@@ -15,14 +14,9 @@ public class Test {
         //Class = null;
     }
 
-
     /*
     @Test
     public void testRun() {
-
     }
-
      */
-
-
 }

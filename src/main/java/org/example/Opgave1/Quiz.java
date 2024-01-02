@@ -28,7 +28,6 @@ public class Quiz {
             // Asks current question.
             System.out.println(element.getQuestion());
             play(element);
-
         }
 
         // Printed on game exit or finish.
