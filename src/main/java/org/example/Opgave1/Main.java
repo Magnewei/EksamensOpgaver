@@ -33,7 +33,6 @@ public class Main {
                 "\n   3: 1920" +
                 "\n   4: 1931";
 
-
         String question6 = "6: What is the chemical symbol for gold?" +
                 "\n   1: Au" +
                 "\n   2: Ag" +
@@ -45,7 +44,6 @@ public class Main {
                 "\n   2: Leonardo da Vinci" +
                 "\n   3: Pablo Picasso" +
                 "\n   4: Michelangelo";
-
 
         String question8 = "8: What is the largest ocean on Earth?" +
                 "\n   1: Atlantic Ocean" +
