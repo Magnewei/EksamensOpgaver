@@ -8,8 +8,7 @@ public class Deck {
     private Stack<Card> cards;
 
     // Empty constructor for instantiating object.
-    public Deck() {
-    }
+    public Deck() {}
 
    // Creates a deck of 52 cards.
    // Iterates over I and J until 52 is reached, then shuffles deck.
