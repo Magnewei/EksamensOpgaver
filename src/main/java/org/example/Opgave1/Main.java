@@ -75,7 +75,5 @@ public class Main {
         quiz.addQuizElement(new QuizElement(1, question10));
 
         quiz.run();
-
-
     }
 }
