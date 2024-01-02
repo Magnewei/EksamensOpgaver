@@ -38,7 +38,7 @@ public class Quiz {
     }
 
 
-    public void play(QuizElement quizElement) {
+    private void play(QuizElement quizElement) {
 
         try {
             int input = scanner.nextInt();

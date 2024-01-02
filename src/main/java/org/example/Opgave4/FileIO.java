@@ -7,7 +7,8 @@ import java.util.Scanner;
 
 public class FileIO {
     public void saveToFile(String shape) {
-        File file = new File("src/main/java/org/example/Opgave4/save.txt");
+        String path = "src/main/java/org/example/Opgave4/save.txt";
+        File file = new File(path);
         try {
             FileWriter fileWriter = new FileWriter(file);
             fileWriter.write(shape);

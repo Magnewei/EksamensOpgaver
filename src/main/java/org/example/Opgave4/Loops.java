@@ -8,7 +8,7 @@ public class Loops {
     public String drawLeftTriangle(int length) {
         String leftTriangle = "";
         for (int n = 1; n < length; n++) {
-            leftTriangle += "\n"+whiteSpace.repeat(length - n) + star.repeat(n);
+            leftTriangle += whiteSpace.repeat(length - n) + star.repeat(n) + "\n";
         }
         return leftTriangle;
     }
@@ -17,7 +17,7 @@ public class Loops {
     public String drawRightTriangle(int length) {
         String rightTriangle = "";
         for (int n = 1; n < length; n++) {
-            rightTriangle += "\n"+star.repeat(n) + whiteSpace.repeat(length - n);
+            rightTriangle += star.repeat(n) + whiteSpace.repeat(length - n) + "\n";
         }
         return rightTriangle;
     }
@@ -25,7 +25,7 @@ public class Loops {
     public String drawSquare(int length) {
         String square = "";
         for (int n = 1; n <= length; n++) {
-            square += "\n"+star.repeat(length);
+            square += star.repeat(length) + "\n";
         }
         return square;
     }

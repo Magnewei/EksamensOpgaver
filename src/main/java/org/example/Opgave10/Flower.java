@@ -2,12 +2,11 @@ package org.example.Opgave10;
 
 public class Flower {
     private final String name;
+    private final int price;
 
     public int getPrice() {
         return price;
     }
-
-    private final int price;
 
     public String getName() {
         return name;
