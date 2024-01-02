@@ -3,7 +3,6 @@ package org.example.Opgave4;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Scanner;
 
 public class FileIO {
     public void saveToFile(String shape) {

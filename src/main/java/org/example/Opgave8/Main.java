@@ -19,7 +19,5 @@ public class Main {
         System.out.println(foodWaste.checkDate(2, category3Check));
         System.out.println(foodWaste.checkDate(3, category4Check));
         System.out.println(foodWaste.checkDate(4, category5Check));
-
-
     }
 }
