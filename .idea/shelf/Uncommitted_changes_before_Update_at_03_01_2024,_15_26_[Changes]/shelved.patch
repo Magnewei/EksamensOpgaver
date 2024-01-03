@@ -1,0 +1,38 @@
+Index: src/main/java/org/example/Opgave5/Game.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package org.example.Opgave5;\n\nimport java.util.Random;\nimport java.util.Scanner;\n\npublic class Game {\n    private final HumanPlayer humanPlayer1 = new HumanPlayer();\n    private final int maxValue = 100;\n    private final Scanner scanner = new Scanner(System.in);\n    private final Random random = new Random();\n    private final int compareGuess = random.nextInt(1, (maxValue+1));\n    private int playerGuess = 0;\n    private int player2Guess = 0;\n\n    // Initializes game with NPC or Player.\n    public void play() {\n        String playerName, player2Name;\n\n        System.out.println(\"Do you wish to play against a second player or the NPC?\" +\n                \"\\n[Yes] for NPC / [No] for a second human player.\");\n        String input = scanner.nextLine();\n\n        if (input.equalsIgnoreCase(\"yes\")) {\n            ComputerPlayer secondPlayer = new ComputerPlayer();\n            playerName = \"Player 1\";\n            player2Name = \"NPC\";\n\n            System.out.println(\"Guess a number. The NPC will pick on its own.\");\n            playerGuess = humanPlayer1.makeAGuess(maxValue);\n            player2Guess = secondPlayer.makeAGuess(maxValue);\n\n            printWinner(playerName, player2Name);\n\n        } else if (input.equalsIgnoreCase(\"no\")) {\n            HumanPlayer secondPlayer = new HumanPlayer();\n            playerName = \"Player 1\";\n            player2Name = \"Player 2\";\n\n            System.out.println(\"Guess a number for \" + playerName);\n            playerGuess = humanPlayer1.makeAGuess(maxValue);\n\n            System.out.println(\"Guess a number for \" + player2Name);\n            player2Guess = secondPlayer.makeAGuess(maxValue);\n\n            printWinner(playerName, player2Name);\n\n            // If input is invalid, recursion back to start of loop.\n        } else {\n            System.out.println(\"Please type a valid input.\");\n            play();\n        }\n\n    }\n\n    // Checks winner(s) and prints statements accordingly.\n    private void printWinner(String playerName, String player2Name) {\n\n        System.out.println(playerName + \" guess is: \"  + playerGuess + \". \\n\" +\n                player2Name + \" guess is:  \" + player2Guess + \". \" +\n                \"\\nThe random number is: \" + compareGuess + \".\");\n\n        if (playerGuess == compareGuess) {\n            System.out.println(playerName + \" guessed correctly!\");\n\n        } else if(player2Guess == compareGuess) {\n            System.out.println(player2Name + \" guessed correctly!\");\n\n        } else {\n            System.out.println(\"Nobody guessed correctly!\");\n        }\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/org/example/Opgave5/Game.java b/src/main/java/org/example/Opgave5/Game.java
+--- a/src/main/java/org/example/Opgave5/Game.java	(revision 4884631ed5f42f7f6696a58edbde56583bd7d8ac)
++++ b/src/main/java/org/example/Opgave5/Game.java	(date 1704105989677)
+@@ -4,7 +4,8 @@
+ import java.util.Scanner;
+ 
+ public class Game {
+-    private final HumanPlayer humanPlayer1 = new HumanPlayer();
++    private final Player humanPlayer1 = new HumanPlayer();
++    private Player secondPlayer;
+     private final int maxValue = 100;
+     private final Scanner scanner = new Scanner(System.in);
+     private final Random random = new Random();
+@@ -21,7 +22,7 @@
+         String input = scanner.nextLine();
+ 
+         if (input.equalsIgnoreCase("yes")) {
+-            ComputerPlayer secondPlayer = new ComputerPlayer();
++            secondPlayer = new ComputerPlayer();
+             playerName = "Player 1";
+             player2Name = "NPC";
+ 
+@@ -32,7 +33,7 @@
+             printWinner(playerName, player2Name);
+ 
+         } else if (input.equalsIgnoreCase("no")) {
+-            HumanPlayer secondPlayer = new HumanPlayer();
++            secondPlayer = new HumanPlayer();
+             playerName = "Player 1";
+             player2Name = "Player 2";
+ 

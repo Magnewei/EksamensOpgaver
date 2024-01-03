@@ -35,6 +35,7 @@ public class FlowerShop {
             System.out.println(number + ". " + flower);
             number++;
         }
+        System.out.println("Which flowers do you wish to purchase?");
     }
 
     private void buyFlowers() {
@@ -56,7 +57,8 @@ public class FlowerShop {
                         Flower boughtFlower = flowers.get(index);
                         boughtFlowers.add(boughtFlower);
                         totalPrice += boughtFlower.getPrice();
-                        System.out.println(boughtFlower.getName() + " was added to the basket.");
+                        System.out.println(boughtFlower.getName() + " was added to the basket. " +
+                                "The total price of your flowers are currently: " + totalPrice + "kr.");
                     }
 
                 } catch (NumberFormatException e) {
@@ -67,7 +69,7 @@ public class FlowerShop {
 
     private void buyBouquet() {
         while (maximumAmountOfFlowers == boughtFlowers.size()) {
-            System.out.println("Do you wish to buy a bouquet, for an extra 50 kr?");
+            System.out.println("Do you wish to buy a bouquet, at the price of 50 kr? [yes/no].");
             String input = scanner.nextLine();
 
             if (input.equalsIgnoreCase("yes")) {
@@ -76,5 +78,4 @@ public class FlowerShop {
             System.out.println("\nThe total price of your cart is: " + totalPrice + ".\nThanks for purchasing at the shop.");
         }
     }
-
 }
