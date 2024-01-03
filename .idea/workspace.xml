@@ -5,18 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3ad2736-4d17-40f5-b196-76ee6b6a3f5b" name="Changes" comment="Refactor Quiz">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EksamensOpgaver.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Opgave2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Opgave2/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Opgave3/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Opgave3/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Opgave3/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Opgave3/Deck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Opgave3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Opgave3/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Opgave4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Opgave4/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Opgave4/TextUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Opgave4/TextUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Opgave5/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Opgave5/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Opgave5/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Opgave5/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Opgave6/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Opgave6/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Opgave8/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Opgave8/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Opgave9/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Opgave9/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Opgave10/FlowerShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Opgave10/FlowerShop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Opgave2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Opgave2/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Opgave3/Card.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Opgave3/Card.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Opgave3/Deck.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Opgave3/Deck.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Opgave3/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Opgave3/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Opgave4/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Opgave4/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Opgave4/TextUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Opgave4/TextUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Opgave5/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Opgave5/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Opgave5/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Opgave5/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Opgave6/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Opgave6/Order.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Opgave8/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Opgave8/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,19 +64,21 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "21",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/mag/Documents/GitHub/EksamensOpgaverBACKUP",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "/Users/mag/Library/Mobile Documents/com~apple~CloudDocs/Documents/GitHub/EksamensOpgaver/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.097561",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
@@ -102,6 +109,8 @@
       <workItem from="1704293943720" duration="148000" />
       <workItem from="1704294112479" duration="105000" />
       <workItem from="1704294246223" duration="456000" />
+      <workItem from="1704294929600" duration="196000" />
+      <workItem from="1704295172651" duration="299000" />
     </task>
     <task id="LOCAL-00001" summary="Refactor Quiz">
       <option name="closed" value="true" />
