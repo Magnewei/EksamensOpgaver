@@ -8,9 +8,8 @@ public class Game {
     private final int maxValue = 100;
     private final Scanner scanner = new Scanner(System.in);
     private final Random random = new Random();
-    private final int compareGuess = random.nextInt(1, (maxValue+1));
-    private int playerGuess = 0;
-    private int player2Guess = 0;
+    private final int compareGuess = random.nextInt(1, maxValue+1);
+    private int playerGuess, player2Guess;
     private final String playerName = "Player 1";
     private String player2Name = "NPC";
 
@@ -41,11 +40,11 @@ public class Game {
             System.out.println("Please type a valid input.");
             play();
         }
-        printWinner(playerName, player2Name);
+        printWinner();
     }
 
     // Checks winner(s) and prints statements accordingly.
-    private void printWinner(String playerName, String player2Name) {
+    private void printWinner() {
 
         System.out.println(playerName + " guess is: "  + playerGuess + ". \n" +
                 player2Name + " guess is:  " + player2Guess + ". " +
