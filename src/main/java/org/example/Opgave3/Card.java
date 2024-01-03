@@ -16,7 +16,6 @@ public class Card {
         String[] suits = {"Clubs", "Diamonds", "Hearts", "Spades"};
         String printRank = ranks[getRank()];
         String printSuit = suits[getSuit()];
-
         return printRank + " of " + printSuit + ".";
     }
 

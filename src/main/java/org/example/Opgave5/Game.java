@@ -50,7 +50,6 @@ public class Game {
             System.out.println("Please type a valid input.");
             play();
         }
-
     }
 
     // Checks winner(s) and prints statements accordingly.

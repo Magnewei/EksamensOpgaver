@@ -37,11 +37,8 @@ public class Deck {
         cards.pop();
     }
 
-
     // Returns the deck of cards.
     public Stack<Card> getDeck() {
         return cards;
     }
-
-
 }

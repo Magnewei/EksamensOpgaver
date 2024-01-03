@@ -12,8 +12,8 @@ public class Main {
         users.add(new User("Mikkel",  "hidd3n"));
         users.add(new User("Katrine", "HiddenPassWord"));
 
-        // Test when password is null.
         /*
+        // Test when password is null.
         String nullPassword = null;
         users.add(new User("Katrine", nullPassword));
          */

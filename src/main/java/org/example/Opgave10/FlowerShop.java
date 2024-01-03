@@ -76,5 +76,4 @@ public class FlowerShop {
             System.out.println("\nThe total price of your cart is: " + totalPrice + ".\nThanks for purchasing at the shop.");
         }
     }
-
 }

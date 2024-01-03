@@ -6,7 +6,6 @@ import java.util.List;
 public class Order {
     private final List<OrderLine> orderLines = new ArrayList<>();
 
-
     public double getTotalPrice() {
         double totalPrice = 0;
         for (OrderLine order : orderLines) {
@@ -39,5 +38,4 @@ public class Order {
             }
         }
     }
-
 }
