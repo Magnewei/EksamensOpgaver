@@ -19,8 +19,6 @@ public class StringHandler {
         return student != null ? student.toString().replace(student.getName(), "They") : "No student found";
     }
 
-
-    /*
     // String method
     public String replaceText(String text) {
         String[] names = {"Katrine", "Stine", "Anders", "Joakim"};
@@ -33,7 +31,4 @@ public class StringHandler {
         }
         return text;  // If no name is found, return String as it was.
     }
-     */
-
-
 }

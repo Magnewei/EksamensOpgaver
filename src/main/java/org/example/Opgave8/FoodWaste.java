@@ -8,7 +8,6 @@ import java.util.List;
 public class FoodWaste {
     private final LocalDate todayDate = LocalDate.of(2024, 01, 07);
 
-
     public boolean checkDate(int category, LocalDate saleByDate) {
         // Initialize and add limits to ArrayList storing days before sale.
         List<Integer> limits = Arrays.asList(03, 01, 14, 02, 05);
@@ -24,6 +23,4 @@ public class FoodWaste {
         }
         return false;
     }
-
-
 }
