@@ -20,12 +20,10 @@ public class Quiz {
                 "\nPick an answer by typing the respective number in the list." +
                 "\nThe game will exit when you have answered all questions ");
 
-
         for (QuizElement element : elements) {
             System.out.println(element);
             play(element);
         }
-
 
         System.out.println("Thanks for playing. You had " + correctAnswers + " correct responses and "
                 + wrongAnswers + " wrong responses." + "\nThanks for playing.");
@@ -34,7 +32,6 @@ public class Quiz {
 
 
     private void play(QuizElement quizElement) {
-
         try {
             int input = scanner.nextInt();
 
@@ -43,7 +40,6 @@ public class Quiz {
 
             } else {
                 System.out.println("Please type an integer between 1-4.");
-                scanner.nextLine();
                 play(quizElement);
             }
 
