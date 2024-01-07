@@ -7,7 +7,6 @@ import java.util.Scanner;
 
 public class Quiz {
     private final List<QuizElement> elements = new ArrayList<>();
-
     private int correctAnswers, wrongAnswers;
     private final Scanner scanner = new Scanner(System.in);
 
@@ -23,6 +22,7 @@ public class Quiz {
 
 
         for (QuizElement element : elements) {
+            System.out.println(element);
             play(element);
         }
 
@@ -38,11 +38,9 @@ public class Quiz {
         try {
             int input = scanner.nextInt();
 
-            // If integer is within range of 1-4, check if answer is correct.
             if ((input <= 4 && input >= 1)) {
-                checkAnswer(quizElement, quizElement.getAnswer(input));
+                checkAnswer(quizElement, quizElement.getAnswer(input-1));
 
-                // If input is outside of range, print error and request new input.
             } else {
                 System.out.println("Please type an integer between 1-4.");
                 scanner.nextLine();

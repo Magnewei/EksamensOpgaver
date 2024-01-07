@@ -15,15 +15,14 @@ public class QuizElement {
         Collections.shuffle(answers);
     }
 
-
     @Override
     public String toString() {
         String present = "";
-
+        int i = 1;
         for (String answer : answers) {
-            present += answer + "\n";
+            present += i + ": " + answer + "\n";
+            i++;
         }
-
         return question + "\n" + present;
     }
 
@@ -35,6 +34,6 @@ public class QuizElement {
     }
 
     public String getAnswer(int i) {
-       return answers.get(i);
+        return answers.get(i);
     }
 }
