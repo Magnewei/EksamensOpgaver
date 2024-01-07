@@ -38,7 +38,6 @@ public class Quiz {
 
 
     private void play(QuizElement quizElement) {
-
         try {
             int input = scanner.nextInt();
 

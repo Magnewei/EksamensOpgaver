@@ -34,6 +34,6 @@ public class QuizElement {
     }
 
     public String getAnswer(int i) {
-        return answers.get(i);
+        return answers.get(i-1);
     }
 }

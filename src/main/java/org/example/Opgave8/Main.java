@@ -5,7 +5,6 @@ import java.time.LocalDate;
 public class Main {
     public static void main(String[] args) {
         FoodWaste foodWaste = new FoodWaste();
-
         System.out.println(foodWaste.checkDate(0, LocalDate.of(2024, 01, 10)));
         System.out.println(foodWaste.checkDate(1, LocalDate.of(2024, 01,8)));
         System.out.println(foodWaste.checkDate(2, LocalDate.of(2024, 01, 22)));

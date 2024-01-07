@@ -17,7 +17,7 @@ public class Loops {
     public String drawRightTriangle(int length) {
         String rightTriangle = "";
         for (int n = 1; n < length; n++) {
-            rightTriangle += star.repeat(n) + whiteSpace.repeat(length - n) + "\n";
+            rightTriangle += star.repeat(n);
         }
         return rightTriangle;
     }

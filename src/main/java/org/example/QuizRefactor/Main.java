@@ -10,8 +10,6 @@ public class Main {
     public static void main(String[] args) {
         Quiz quiz = new Quiz();
 
-
-
         // Question 1
         quiz.addQuizElement(new QuizElement(
                 "1: What is the capital of France?",

@@ -32,14 +32,12 @@ public class Quiz {
             int input = scanner.nextInt();
 
             if ((input <= 4 && input >= 1)) {
-                checkAnswer(quizElement, quizElement.getAnswer(input-1));
+                checkAnswer(quizElement, quizElement.getAnswer(input));
 
             } else {
                 System.out.println("Please type an integer between 1-4.");
                 play(quizElement);
             }
-
-            // If input is not an integer, print error and request new input.
         } catch (InputMismatchException e) {
             System.out.println("Please type an integer.");
             scanner.nextLine();
