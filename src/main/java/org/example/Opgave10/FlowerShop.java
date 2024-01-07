@@ -52,6 +52,7 @@ public class FlowerShop {
                     } else if (Integer.parseInt(input) < 1 || Integer.parseInt(input) > 10) {
                         System.out.println("Please type an input within the range of the list.");
                         buyFlowers();
+
                     } else {
                         int index = Integer.parseInt(input) - 1;  // -1 is used to get correct flower from list.
                         Flower boughtFlower = flowers.get(index);

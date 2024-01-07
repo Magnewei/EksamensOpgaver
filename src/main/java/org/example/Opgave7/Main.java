@@ -27,9 +27,11 @@ public class Main {
             System.out.println(stringHandler.anonymizeGender(s));
         }
 
+
         /*
-        //int time = 10;
-        // String parameter in place of student object
+        //String parameter in place of student object
+         String[] names = {"Katrine", "Stine", "Anders", "Joakim"};
+         int time = 10;
         for (Student s : studentList) {
             //time++;
             System.out.println(stringHandler.replaceText(s.toString()));

@@ -20,9 +20,7 @@ public class StringHandler {
     }
 
     // String method
-    public String replaceText(String text) {
-        String[] names = {"Katrine", "Stine", "Anders", "Joakim"};
-
+    public String replaceText(String text, String[] names) {
         for (String name : names) {
             if (text.contains(name)) {
                 String gender = (name.equals("Katrine") || (name.equals("Stine"))) ? "She" : "He";
