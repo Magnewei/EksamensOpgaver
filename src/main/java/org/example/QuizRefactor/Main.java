@@ -1,10 +1,16 @@
 package org.example.QuizRefactor;
 
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.stream.Stream;
 
 public class Main {
     public static void main(String[] args) {
         Quiz quiz = new Quiz();
+
+
 
         // Question 1
         quiz.addQuizElement(new QuizElement(

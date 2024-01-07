@@ -4,9 +4,9 @@ import java.util.Collections;
 import java.util.List;
 
 public class QuizElement {
-    private String question;
-    private String correctAnswer;
-    private List<String> answers;
+    private final String question;
+    private final String correctAnswer;
+    private final List<String> answers;
 
     public QuizElement(String question, String correctAnswer, List<String> answers) {
         this.question = question;

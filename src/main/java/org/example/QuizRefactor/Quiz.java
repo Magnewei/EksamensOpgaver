@@ -20,14 +20,10 @@ public class Quiz {
                 "\nPick an answer by typing the respective number in the list." +
                 "\nThe game will exit when you have answered all questions ");
 
-        for (QuizElement element : elements) {
-            System.out.println(element);
-            play(element);
-        }
+        elements.forEach( (n) -> {System.out.println(n); play(n); });
 
         System.out.println("Thanks for playing. You had " + correctAnswers + " correct responses and "
                 + wrongAnswers + " wrong responses." + "\nThanks for playing.");
-        scanner.close();
     }
 
 

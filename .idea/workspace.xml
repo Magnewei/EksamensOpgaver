@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3ad2736-4d17-40f5-b196-76ee6b6a3f5b" name="Changes" comment="Refactor Quiz">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/QuizRefactor/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/QuizRefactor/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/QuizRefactor/Quiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/QuizRefactor/Quiz.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/QuizRefactor/QuizElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/QuizRefactor/QuizElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Opgave7/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Opgave7/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Opgave7/StringHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Opgave7/StringHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Opgave8/FoodWaste.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Opgave8/FoodWaste.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Opgave8/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Opgave8/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Test.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +102,7 @@
       <workItem from="1704391919961" duration="6433000" />
       <workItem from="1704628603447" duration="1714000" />
       <workItem from="1704635113566" duration="3955000" />
-      <workItem from="1704649054237" duration="2228000" />
+      <workItem from="1704649054237" duration="2988000" />
     </task>
     <task id="LOCAL-00001" summary="Refactor Quiz">
       <option name="closed" value="true" />
@@ -188,7 +184,23 @@
       <option name="project" value="LOCAL" />
       <updated>1704650306734</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Refactor Quiz">
+      <option name="closed" value="true" />
+      <created>1704651432778</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1704651432779</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Refactor Quiz">
+      <option name="closed" value="true" />
+      <created>1704651579177</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1704651579177</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
